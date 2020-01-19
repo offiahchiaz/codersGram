@@ -10,7 +10,7 @@
         <div class="col-9 pt-5">
             <div class="d-flex justify-content-between align-items-baseline">
                 <h1>{{ $user->username }}</h1>
-                <a href="#" class="btn btn-primary">Add new Post</a>
+                <a href="/p/create" class="btn btn-primary">Add new Post</a>
             </div>
             <div class="d-flex">
                 <div class="pr-5"><strong>212</strong> following</div>
@@ -27,9 +27,9 @@
     </div>
 
     <div class="row pt-5">
-        <div class="col-4"><img src="/images/pic1.jpg" class="w-100" alt=""></div>
-        <div class="col-4"><img src="/images/pic3.jpg" class="w-100" alt=""></div>
-        <div class="col-4"><img src="/images/pic2.jpg" class="w-100" alt=""></div>
+        @foreach ($user->posts as $post)
+            <div class="col-4"><img src="/storage/{{ $post->image }}" class="rounded w-100" alt=""></div>
+        @endforeach
     </div>
 </div>
 @endsection

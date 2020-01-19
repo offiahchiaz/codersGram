@@ -18,7 +18,7 @@
                         <input id="caption" type="text" 
                             class="form-control @error('caption') is-invalid @enderror" 
                             name="caption" value="{{ old('caption') }}"  
-                            autocomplete="caption" autofocus>
+                            autocomplete="caption" required autofocus>
     
                         @error('caption')
                             <span class="invalid-feedback" role="alert">
@@ -31,7 +31,7 @@
                     <div class="row">
                         <label for="image" class="col-md-4 col-form-label">{{ __('Post Image') }}</label>
                         
-                        <input type="file" class="form-control-file" id="image" name="image" >
+                        <input type="file" class="form-control-file" id="image" name="image" required>
                         
                         @error('image')
                             
