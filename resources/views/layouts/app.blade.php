@@ -25,7 +25,7 @@
             <div class="container">
                 <a class="navbar-brand d-flex" href="{{ url('/') }}">
                     <div> <img src="/svg/instagram.svg" class="pr-2" style="height: 20px; border-right: 1px solid #333" alt="codersGram logo"> </div>
-                    <div class="pl-2">codersGram</div>
+                    <div class="pl-2">coders'Gram</div>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
